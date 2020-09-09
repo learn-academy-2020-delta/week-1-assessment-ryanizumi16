@@ -55,15 +55,15 @@ console.log(mult5(myNumbers2))
 var stringWithVowels1 = "HeyThereLearnStudent"
 var stringWithVowels2 = "ILoveJavaScript"
 
-// const noVowels = (string) => {
-//   let newArray = string.split("")
-//   let filteredArray = newArray.filter(value => {
-//     return value !== "a" && value !== "e" && value !== "i" && value !== "o" && value !== "u"
-//   })
-//   let newString = filteredArray.join("")
-//   return newString
-// }
-// console.log(noVowels(stringWithVowels2))
+const noVowels = (string) => {
+  let newArray = string.split("")
+  let filteredArray = newArray.filter(value => {
+    return value !== "a" && value !== "e" && value !== "i" && value !== "o" && value !== "u"
+  })
+  let newString = filteredArray.join("")
+  return newString
+}
+console.log(noVowels(stringWithVowels2))
 
 
 // --------------------5) Copy/paste your code from #4. Refactor your code to include non-string edge cases. Inform your user that the variable passed into the vowel removal function is not a string.
@@ -71,22 +71,22 @@ var stringWithVowels2 = "ILoveJavaScript"
 
 var notAString1 = true
 var notAString2 = 42
-
-const noVowels = (string) => {
-  // let newArray = string.split("")
-  // let filteredArray = newArray.filter(value => {
-  //   return value !== "a" && value !== "e" && value !== "i" && value !== "o" && value !== "u"
-  // })
-  // let newString = filteredArray.join("")
-  // return newString
-  if(true !== string){
-    return "true is not a string"
-  }
-  else if(42 !== string) {
-    return "42 is not a string"
-  }
-}
-console.log(noVowels(notAString1))
+//
+// const noVowels = (string) => {
+//   // let newArray = string.split("")
+//   // let filteredArray = newArray.filter(value => {
+//   //   return value !== "a" && value !== "e" && value !== "i" && value !== "o" && value !== "u"
+//   // })
+//   // let newString = filteredArray.join("")
+//   // return newString
+//   if(true !== string){
+//     return "true is not a string"
+//   }
+//   else if(42 !== string) {
+//     return "42 is not a string"
+//   }
+// }
+// // console.log(noVowels(notAString1))
 
 
 // --------------------6) Create a function that takes the toonimals array and returns an array with only the toon objects that are cats.
